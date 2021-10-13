@@ -10,6 +10,8 @@
 
 ## 버전관리
 
+![v](img/version-control.png)
+
 1. work1.txt를 만들고 커밋.
 2. 이 버전을 HEAD에 기록하는데, HEAD가 main을 가리키기 때문에 main에 기록한다. main은 40자 commit id(즉 현재 버전!)를 가리키는 중이다.
 3. work2와 3을 두번째 버전으로 커밋. 하면 HEAD -> main -> 두번째 버전(커밋 아이디)이 된다. 근데 새로운 커밋 아이디는 이전 커밋 아이디를 가리키며, 이전 커밋 아이디에 대한 정보를 망라하여 만들어진다.
@@ -24,4 +26,13 @@
    3. 작업 중 Detached HEAD에서 다른 브랜치로 체크아웃하면, 이전 커밋 아이디를 모를 시에 돌아가기 난감한 상황이 발생할 수 있다. (기본적으로 그래프에도 표시되지 않는다.)
    4. `git reflog` 명령어로 히스토리를 통하여 이전 커밋 아이디를 찾아 다시 돌아갈 수 있다.
    5. 깃은 기본적으로 브랜치를 통하여 커밋을 관리하기 때문에 해프닝이 발생할 수 있다. Detached HEAD에서는 `git checkout -b 브랜치_이름` 으로 브랜치를 만들고 커밋을 살리는 방법을 깃에서는 권장한다.
-7.
+
+## Pull Request 및 Merge
+
+1. HSJung93은 forGitTest1의 -Git-forGitTest를 fork해서 코드를 수정하였다.
+2. HSJung93은 이제 fork 해서 만든 -Git-forGitTest 레포지토리에서 New pull Request를 한다.
+   ![s](img/send-pull-request.png)
+3. forGitTest1의 -Git-forGitTest로 가서 pull Request를 승인하고 merge 한다.
+   ![m](img/merge.png)
+4. 완료! (리드미에 이미지 파일을 업로드한 수정 사항은 추후에 pull request를 할 것이다.)
+   ![d](img/done.png)
