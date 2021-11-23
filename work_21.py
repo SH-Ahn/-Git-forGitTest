@@ -44,6 +44,12 @@ def ryouiki(yourHp, yourMp, yourPl):
     else:
         print("Hoesung: Haha you know python well")
 
+
+#30/3
+#30//3
+#30%3
+
+
 days = 0
 yourHp, yourMp, yourPl = input("System: Your Hp, Mp, and python level please?").split()
 ryouiki(int(yourHp), int(yourMp), int(yourPl))
